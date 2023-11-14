@@ -11,21 +11,26 @@
   </head>
 
   <body>
-    <div class="container">
-    <main>
-        <header id="header">
-      <h1 class="text-info">CatPhotoApp</h1>
+    <div class="container-fluid">
+   
+      <header>
+      <div class="container-fluid p-5 text-center bg-dark text-white">
+        <h1>CatPhotoApp</h1>
+      <p>All you need to know about cats!</p></div>
     </header>
-      <div class="container mt-5">
+
+    <main>
+      <div class="container mb-3 mt-3">
         <div class="row">
-      <section class="col-sm-4">
+
+      <div class="col">
         <h2>Cat Photos</h2>
         <!-- TODO: Add link to cat photos -->
         <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
         <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" class="img-thumbnail img-fluid" alt="A cute orange cat lying on its back."></a>
-      </section>
+      </div>
 
-      <section class="col-sm-4" text>
+      <div class="col">
         <h2>Cat Lists</h2>
         <h3>Things cats love:</h3>
         <ul>
@@ -47,10 +52,10 @@
           <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" class="rounded img-fluid" alt="Five cats looking around a field.">
           <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
         </figure>
-      </section>
+      </div>
 
 
-      <section class="col-sm-4">
+      <div class="col">
         <h2>Cat Form</h2>
         <form action="https://freecatphotoapp.com/submit-cat-photo">
           <fieldset>
@@ -65,17 +70,21 @@
             <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
           </fieldset>
           <input type="text" name="catphotourl" placeholder="cat photo URL" required>
-          <button type="submit">Submit</button>
+          <input type="submit" class="btn btn-primary btn-sm" value="Submit">
+          
         </form>
-      </section>
+      </div>
     </div>
     </div>
+  </main>
       <footer id="footer">
+        <div class="container-fluid p-5 bg-dark text-white text-center">
         <p>
           No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
         </p>
+      </div>
       </footer>
-    </main>
+   
    
 </div>
   </body>
